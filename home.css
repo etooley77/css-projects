@@ -1,0 +1,112 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	min-width: 100vh;
+	min-height: 100vh;
+
+	display: flex;
+
+	background-image: linear-gradient(0deg,
+			hsl(0deg 0% 9%) 0%,
+			hsl(0deg 0% 10%) 23%,
+			hsl(0deg 0% 11%) 41%,
+			hsl(0deg 0% 11%) 54%,
+			hsl(0deg 0% 12%) 64%,
+			hsl(0deg 0% 12%) 72%,
+			hsl(0deg 0% 13%) 77%,
+			hsl(0deg 0% 13%) 82%,
+			hsl(0deg 0% 13%) 86%,
+			hsl(0deg 0% 14%) 88%,
+			hsl(206deg 9% 15%) 91%,
+			hsl(204deg 21% 17%) 93%,
+			hsl(203deg 30% 18%) 94%,
+			hsl(202deg 36% 20%) 96%,
+			hsl(201deg 42% 21%) 97%,
+			hsl(201deg 47% 22%) 98%,
+			hsl(200deg 52% 22%) 99%,
+			hsl(200deg 56% 23%) 99%,
+			hsl(199deg 59% 24%) 100%,
+			hsl(199deg 63% 25%) 100%);
+}
+
+/*  */
+
+.list {
+	width: 20%;
+	height: 100vh;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+
+	background-color: #242424;
+	border-right: 5px solid black;
+}
+
+.list p,
+.list a {
+	font-size: 18px;
+}
+
+.list-title {
+	margin: 20px auto;
+
+	color: white;
+}
+
+.list #item-list {
+	margin-left: 20px;
+	list-style: none;
+}
+
+#item-list li {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+
+	color: #fff;
+}
+
+.list-item {
+	margin: 20px 10px;
+}
+
+.list-item-links {
+	display: flex;
+	flex-direction: column;
+	margin-left: 10px;
+}
+
+.list-item-link {
+	display: flex;
+	align-items: center;
+}
+
+.list-item-link a {
+	color: #fff;
+	text-decoration: none;
+}
+
+/*  */
+
+.center {
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.center #althome {
+	padding: 15px 10px;
+}
+
+.center #althome a {
+	text-decoration: none;
+	color: black;
+	font-size: 24px;
+}

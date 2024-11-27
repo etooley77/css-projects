@@ -1,0 +1,96 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	min-width: 100vh;
+	min-height: 100vh;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/*  */
+
+.wrapper {
+	width: max-content;
+	height: 50%;
+
+	background-color: lightblue;
+}
+
+.wrapper .wrapper-title {
+	padding: 10px 0;
+	text-align: center;
+}
+
+.projects {
+	display: flex;
+	justify-content: center;
+
+	padding: 20px;
+}
+
+.projects .project {
+	width: 200px;
+	height: 300px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+
+	border: 2px solid black;
+	padding: 20px;
+	margin: 0 5px;
+	background-color: #363636;
+}
+
+.card-top {
+	height: 50%;
+	width: 100%;
+}
+
+#project1 {
+	background-image: url('althome_imgs/login1.png');
+	background-size: cover;
+	background-position: center;
+}
+
+.card-bottom {
+	height: 40%;
+	width: 100%;
+
+	text-align: center;
+
+	position: relative;
+}
+
+.card-bottom .project-title {
+	font-size: 20px;
+	padding: 10px;
+
+	color: white;
+}
+
+.card-bottom .project-links {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	position: absolute;
+	left: 25%;
+	bottom: -20px;
+}
+
+.project-links .project-link {
+	text-decoration: none;
+	color: white;
+	font-size: 18px;
+}
+
+.project-link:hover {
+	text-decoration: underline;
+}
