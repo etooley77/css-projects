@@ -1,0 +1,186 @@
+@font-face {
+	font-family: 'SourGummy';
+	src: url('fonts/sourgummy.ttf');
+	font-weight: 300;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'SourGummy', sans-serif;
+}
+
+body {
+	min-width: 100vh;
+	min-height: 100vh;
+	background-image: url('login_imgs/bg2.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.home {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	padding: 5px;
+	background-color: #fff;
+	color: #000;
+}
+
+/* Form styling */
+
+.wrapper {
+	background-color: transparent;
+	backdrop-filter: blur(5px);
+
+	width: 420px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+
+	border: 2px solid rgba(255, 255, 255, 0.2);
+	border-radius: 15px;
+	padding: 40px 50px;
+
+	color: #fff
+}
+
+.wrapper .formtitle {
+	text-align: center;
+	font-size: 36px;
+	transition: 0.5s;
+}
+
+.wrapper .form-title:hover {
+	text-decoration: underline;
+}
+
+.wrapper .login-form {
+	width: 100%;
+}
+
+.wrapper .input-section {
+	width: 100%;
+	position: relative;
+	height: 50px;
+
+	margin: 30px 0 20px 0;
+}
+
+.wrapper .input-password {
+	margin-bottom: 0px;
+}
+
+.input-section input {
+	width: 100%;
+	height: 100%;
+
+	background-color: transparent;
+	border: 2px solid rgba(255, 255, 255, 0.2);
+	border-radius: 40px;
+	padding: 20px 45px 20px 20px;
+
+	font-size: 16px;
+	color: #fff;
+
+	transition: 0.5s ease;
+}
+
+.input-section input::placeholder {
+	color: #fff;
+}
+
+.input-section input:focus {
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+.input-section .logo {
+	position: absolute;
+	right: 10px;
+	top: 27%;
+	font-size: 25px;
+
+	transform: translate(-50%);
+}
+
+.wrapper .password-tips {
+	margin-top: 0;
+
+	text-align: center;
+	font-size: 12px;
+}
+
+.wrapper .remember-forgot {
+	text-align: center;
+	position: relative;
+}
+
+.remember-forgot p {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
+}
+
+.wrapper .form-submit {
+	width: 60%;
+	margin: 0 auto;
+	margin-top: 30px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 5px;
+}
+
+.form-submit .form-submit-btn {
+	width: 100%;
+
+	background-color: transparent;
+	border: 2px solid rgba(255, 255, 255, 0.2);
+	border-radius: 40px;
+	color: #fff;
+
+	font-size: 20px;
+	padding: 10px 0;
+	cursor: pointer;
+
+	transition: 0.25s ease-in;
+}
+
+.form-submit .form-submit-btn:hover {
+	border: 2px solid rgba(255, 255, 255, 0.9);
+	background-color: rgba(255, 255, 255, 0.9);
+	color: #333;
+}
+
+.form-submit .forgot-password {
+	text-decoration: none;
+	color: #fff;
+	position: relative;
+}
+
+.form-submit .forgot-password::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: -2%;
+	width: 0%;
+	height: 2px;
+	background-color: rgba(255, 255, 255, 0.5);
+	transition: width 0.3s ease;
+}
+
+.form-submit .forgot-password:hover::after {
+	width: 104%;
+}
